@@ -34,13 +34,33 @@ Target Variable:
 ---
 
 ## Results
-- The model effectively classifies spam and non-spam messages.
-- Evaluation metrics include:
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-score
-- Confusion matrix analysis shows strong spam detection performance.
+## Results
+The spam detection model achieved high performance on the SMS test dataset.
+
+- **Accuracy:** 96.8%
+- **Total Test Samples:** 1,115
+
+### Confusion Matrix Summary
+- Ham messages correctly classified: 966
+- Spam messages correctly classified: 113
+- False negatives (spam misclassified as ham): 36
+- False positives: 0
+
+### Classification Metrics
+- Ham (Class 0):
+  - Precision: 0.96
+  - Recall: 1.00
+  - F1-score: 0.98
+- Spam (Class 1):
+  - Precision: 1.00
+  - Recall: 0.76
+  - F1-score: 0.86
+
+- **Macro Average F1-score:** 0.92  
+- **Weighted Average F1-score:** 0.97  
+
+The model demonstrates excellent performance in identifying legitimate messages while maintaining high precision for spam detection, making it suitable for real-world SMS filtering applications.
+
 
 ---
 
